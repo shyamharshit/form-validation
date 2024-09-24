@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>form validation</title>
+    </head>
+    <body>
+        <h1>form</h1>
+        <form name = "f1" onsubmit="validate()">
+            name: <input type="text" name="fname"/>
+            <input type="submit"/>
+        </form>
+        <script>
+            function validate(){
+                var x = document.forms["f1"]["fname"].value;
+                if (x=="" ){
+                    document.write("name must bee filleed out ! to be submited!!");
+                    return false;
+                }
+            }
+        </script>
+    </body>
+</html>
